@@ -1,0 +1,26 @@
+<html>
+<body>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+function Person(first, last, age) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+}
+
+Person.prototype.nationality = "Indian";
+Person.prototype.motherTongue = "Kannnada";
+
+const myIdentity1 = new Person("Jayatheertha", "Kalibhat", 28);
+document.getElementById("demo1").innerHTML =
+"My nationality is " + myIdentity1.nationality; 
+const myIdentity2 = new Person("Jayatheertha", "Kalibhat", 28);
+document.getElementById("demo2").innerHTML =
+"My Mother Tongue is " + myIdentity2.motherTongue;
+</script>
+
+</body>
+</html>

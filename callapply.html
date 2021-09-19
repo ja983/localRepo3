@@ -1,0 +1,26 @@
+<html>
+<body>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+const person = {
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+const person1 = {
+  firstName:"Jayatheertha",
+  lastName: "Kalibhat"
+}
+const person2 = {
+  firstName:"Shreedhar",
+  lastName: "Kadakol"
+}
+document.getElementById("demo1").innerHTML = person.fullName.call(person1); 
+document.getElementById("demo2").innerHTML = person.fullName.apply(person2);
+</script>
+
+</body>
+</html>
